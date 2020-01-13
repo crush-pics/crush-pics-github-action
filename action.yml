@@ -1,0 +1,6 @@
+name: 'Crush.Pics for GitHub'
+description: 'Crush.Pics for GitHub'
+runs:
+  using: 'node12'
+  main: 'index.js'
+on: pull_request

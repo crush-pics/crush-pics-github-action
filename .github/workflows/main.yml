@@ -1,0 +1,14 @@
+name: Crush images
+on: [pull_request]
+jobs:
+  crush:
+    runs-on: ubuntu-latest
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Crush images
+        uses: ./ # Uses an action in the root directory
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          api-key: ${{ secrets.API_KEY }}
