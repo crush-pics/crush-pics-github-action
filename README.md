@@ -41,7 +41,7 @@ jobs:
 
 By default Crush.pics for GitHub will use our best available Balanced compression. However, if you’d like to ignore specific file paths, or change image compression options, read on.
 
-Change the configuration options by adding a `.github/crush-pics/config.yml` file:
+Change the configuration options by adding a `.github/crush-pics/config.json` file:
 
 ```json
 {
