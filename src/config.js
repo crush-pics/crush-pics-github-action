@@ -5,9 +5,11 @@ const CONFIG_PATH = ".github/crush-pics/config.json";
 const readConfig = async () => {
   var customConfiguration = {};
 
-  customConfiguration = await fs.readFile(CONFIG_PATH)
-    .then((content) => JSON.parse(content))
-    .catch((error) => console.error('Could not read config.json', error));
+  try {
+    customConfiguration = await fs.readFile(CONFIG_PATH).then((content) => JSON.parse(content))
+  } catch(error) {
+    console.error('[Warning] Could not read config.json')
+  }
 
   return customConfiguration
 }

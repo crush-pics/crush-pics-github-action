@@ -2,10 +2,12 @@ const path = require("path");
 const { generateMarkdownSuccessfulReport, generateMarkdownFailedReport } = require("./src/markdown-report");
 const { processImages } = require("./src/crush-api");
 const downloadImages = require("./src/download-images");
+const getConfig = require("./src/config");
 
 const run = async () => {
   const files = ['images/4_.jpg'];
   const changedFiles = [];
+  const config = await getConfig();
 
   for (const file of files) {
     changedFiles.push({
@@ -13,13 +15,6 @@ const run = async () => {
       filePath: path.resolve(file),
     });
   }
-
-  const config = {
-    compression_type: 'balanced',
-    compresion_level: 85,
-    strip_tags: true,
-    api_url: 'https://apistaging.crush.pics/v1'
-  };
 
   const compressedImages = await processImages(changedFiles, config);
 
