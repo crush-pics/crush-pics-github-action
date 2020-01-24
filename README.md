@@ -28,7 +28,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Crush images
-        uses: crush-pics/crush-pics-github-action
+        uses: crush-pics/crush-pics-github-action@master
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           api-key: ${{ secrets.CRUSH_API_KEY }}
