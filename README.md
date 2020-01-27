@@ -6,6 +6,8 @@ Image Optimizer Action will automatically compress JPEG, PNG and GIF images in y
 - After images are compressed, Action will update pull request with compressed images.
 - Compression report is added to pull request comments.
 
+![Screenshot of Image Optimizer Pull Request comment](https://user-images.githubusercontent.com/129972/73187362-348f0f00-4119-11ea-9c25-cdbadbec66e4.png)
+
 ## Add Image Optimizer to your workflow
 
 1. Sign up for a free API key at [Crush.pics](https://crush.pics)
