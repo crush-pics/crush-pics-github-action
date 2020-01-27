@@ -1,5 +1,9 @@
-name: 'Crush.Pics for GitHub'
-description: 'Crush.Pics for GitHub'
+name: 'Image Optimizer'
+description: 'Compress and optimize images in your repository'
 runs:
   using: 'node12'
   main: 'index.js'
+
+branding:
+  icon: "image"
+  color: "gray-dark"
