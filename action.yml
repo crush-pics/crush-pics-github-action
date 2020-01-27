@@ -1,5 +1,6 @@
 name: 'Image Optimizer'
 description: 'Compress and optimize images in your repository'
+author: 'Crush.pics'
 runs:
   using: 'node12'
   main: 'index.js'
