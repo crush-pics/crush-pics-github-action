@@ -13,7 +13,7 @@
     "@actions/core": "^1.2.0",
     "@actions/github": "^2.0.0",
     "@crush-pics/crush-pics": "^0.2.2",
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "humanize": "0.0.9"
   }
 }
